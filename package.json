@@ -7,8 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest",
-    "commit": "git add . && commit -m"
+    "test": "jest"
   },
   "dependencies": {
     "bootstrap": "^4.6.1",
