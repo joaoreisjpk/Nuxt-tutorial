@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :to="`/products/${cardInfo.id}`" class="card-container">
     <img
-      :src="require(`@/store/images/${cardInfo.image}`)"
+      :src="require(`@/assets/images/${cardInfo.image}`)"
       alt=""
       class="image"
     />

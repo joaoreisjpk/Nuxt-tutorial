@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import { largeCardSections, smallCardSections } from "../store/data";
+import { largeCardSections, smallCardSections } from "../assets/data";
 
 export default Vue.extend({
   name: "IndexPage",

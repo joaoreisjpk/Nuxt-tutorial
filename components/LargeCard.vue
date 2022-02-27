@@ -1,14 +1,14 @@
 <template>
-  <div class="card">
+  <NuxLink :to="`products/${card.id}`" class="card">
     <img
-      :src="require(`@/store/images/${card.image}`)"
+      :src="require(`@/assets/images/${card.image}`)"
       :alt="card.title"
       class="image"
     />
 
     <h3 class="header">{{ card.title }}</h3>
     <p class="snippet">{{ card.snippet }}</p>
-  </div>
+  </NuxLink>
 </template>
 
 <script>

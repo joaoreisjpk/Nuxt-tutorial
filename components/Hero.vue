@@ -9,7 +9,7 @@
       </p>
       <button class="button btn">Start Looking</button>
     </div>
-    <img src="../store/svg/fire-extinguisher.svg" alt="" class="image" />
+    <img src="../assets/svg/fire-extinguisher.svg" alt="" class="image" />
   </div>
 </template>
 

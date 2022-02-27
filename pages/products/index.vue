@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { largeCardSections, smallCardSections } from "@/store/data.ts";
+import { largeCardSections, smallCardSections } from "@/assets/data.ts";
 export default {
   data() {
     return {
