@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Page Not Found</h1>
     <img :src="require('@/assets/images/fe25.jpg')" alt="" />
   </div>
