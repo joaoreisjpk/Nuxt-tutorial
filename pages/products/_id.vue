@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Nav />
     <div>
       <div v-if="product" class="container py-5">
         <div class="hero-container">
