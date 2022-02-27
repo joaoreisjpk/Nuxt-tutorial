@@ -252,14 +252,14 @@ interface StateProps {
 }
 
 export const mutations = {
-  addItem(state: StateProps, id: number) {
-    let item: any = state.products.find((product) => product.id === id);
+  addItem(state: StateProps, id: string) {
+    let item: any = state.products.find((product) => product.id === Number(id));
     state.myRentals.push(item);
   },
 };
 
 export const getters = {
-  getProductById: (state: StateProps) => (id: number) => {
-    return state.products.find((product) => product.id === id);
+  getProductById: (state: StateProps) => (id: string) => {
+    return state.products.find((product) => product.id === Number(id));
   },
 };
