@@ -1,16 +1,22 @@
 <template>
   <div class="container">
-    <h4 class="header">{{ cardSection.title }}</h4>
+    <h4 class="header">{{ cardsSection.title }}</h4>
     <p class="snippet">
-      {{ cardSection.snippet }}
+      {{ cardsSection.snippet }}
     </p>
-    <div class="card-container"></div>
+    <div class="cards-container">
+      <LargeCard
+        v-for="card in cardsSection.cards"
+        :key="card.id"
+        :card="card"
+      />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["cardSection"],
+  props: ["cardsSection"],
 };
 </script>
 

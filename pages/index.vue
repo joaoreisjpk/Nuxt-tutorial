@@ -4,7 +4,7 @@
     <LargeCardDisplay
       v-for="cardInfo in largeCardInfo"
       :key="cardInfo.id"
-      :cardSection="cardInfo"
+      :cardsSection="cardInfo"
     />
   </div>
 </template>
@@ -22,5 +22,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-LargeCardDisplay
