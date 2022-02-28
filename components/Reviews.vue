@@ -1,7 +1,14 @@
 <template>
   <div>
     <h3>Customer Reviews</h3>
-    <div></div>
+    <div v-if="!$fetchState.pending">
+      <ReviewCard
+        v-for="reviewer in reviewers.results"
+        :key="reviewer.id.value"
+        :review="reviewer"
+      />
+    </div>
+    <div v-else>Loading...</div>
   </div>
 </template>
 
@@ -13,7 +20,7 @@ export default {
     };
   },
   async fetch() {
-    this.reviwers = await fetch("https://randomuser.me/api/?results=5").then(
+    this.reviewers = await fetch("https://randomuser.me/api/?results=5").then(
       (res) => res.json()
     );
   },
