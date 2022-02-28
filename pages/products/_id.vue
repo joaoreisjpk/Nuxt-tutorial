@@ -59,7 +59,9 @@
 </template>
 
 <script>
+import RentModal from "~/Nuxt-Crash-Course/Client/components/RentModal.vue";
 export default {
+  components: { RentModal },
   computed: {
     product() {
       return this.$store.getters.getProductById(this.$route.params.id);
